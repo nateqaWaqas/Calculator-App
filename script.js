@@ -17,16 +17,11 @@ function del(){
  let val= del.length;
 console.log(screen.innerHTML.length)
   screen.innerHTML=del.slice(0,val-1);
-
-
 }
 
 function reset() {
     document.querySelector("#screen").innerHTML="";
-    }
-
-
-
+  }
 document.getElementById("scroll").addEventListener("click", function () {
   if (theme == 1){
 
@@ -39,8 +34,7 @@ document.getElementById("scroll").addEventListener("click", function () {
   e.classList.remove("theme-3");
   theme=2;
   }
-// });
-// document.getElementById("scroll").addEventListener("click", function () {
+
   else if (theme == 2){
     let e = document.getElementById("target");
  
@@ -54,9 +48,6 @@ document.getElementById("scroll").addEventListener("click", function () {
 
   theme =3;
   }
-// });
-
-// document.getElementById("scroll").addEventListener("click", function () {
   else if(theme==3){
     let e = document.getElementById("target");
   e.classList.remove("justify-center")
@@ -71,4 +62,21 @@ document.getElementById("scroll").addEventListener("click", function () {
   }
 
 });
-
+document.querySelector("html").addEventListener('keydown', (e)=>{
+  let a= e.key
+  if(a>=0 && a<=9){
+    sum(a);
+  }
+  if(a=='-' || a=='+' || a=='/'|| a=='.' || a=='*'){
+    sum(a)
+  }
+  if(a=='Enter'){
+    equal()
+  }
+  if(a=='Backspace'){
+    del()
+  }
+  if(a=='Delete'){
+    reset()
+  }
+})
