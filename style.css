@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html {
+    font-family: 'League Spartan', sans-serif;
+    background: hsl(222, 26%, 31%);
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+.toggle{
+  font-size: 20px;
+}
+#target.theme-1{
+  background-color: hsl(222, 26%, 31%);
+  color: aquamarine;
+}
+#target.theme-2{
+  color: black;
+  background-color: hsl(0, 0%, 90%);
+}
+#target.theme-2 #text{
+  color: black;
+}
+#target.theme-2 #theme-2-screen{
+  background-color: 	#d1cccc;
+}
+#target #scroll{
+  background-color:  hsl(25, 98%, 40%);
+}
+#target.theme-2 #theme-2-input{
+  background-color:   hsl(0, 0%, 94%);
+  color: black;
+  font: bolder;
+  font-weight: 700px;
+}
+#target #theme-2-btn{
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 4px 0  hsl(185, 58%, 25%);
+}
+#target #theme-2-btns{
+  background-color:  hsl(0, 0%, 93%);
+}
+#target #isequal{
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 4px 0 hsl(25, 99%, 27%);
+}
+#target.theme-3{
+  background-color:  hsl(268, 75%, 9%);
+}
+#target.theme-3 #theme-3-screen{
+  background-color: hsl(268, 71%, 12%);
+}
+#target.theme-3 #theme-2-input{
+  background-color: hsl(268, 71%, 12%);
+}
+#target.theme-3 #theme-2-btns{
+  background-color:  hsl(268, 47%, 21%);
+  box-shadow: 0px 4px 0  hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+#target.theme-3 #theme-2-btn{
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 4px 0  hsl(290, 70%, 36%);
+}
+#target.theme-3 #isequal{
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 4px 0 hsl(177, 92%, 70%);
+}
+#target.theme-3 #scroll{
+  background-color:  hsl(177, 92%, 70%);
+}
+#target.theme-3 #text{
+  color: hsl(52, 100%, 62%);
+}
+#target.theme-3 #theme-2-input{
+  color: hsl(52, 100%, 62%);
+}
+/* #scroll {
+  transform: margin-left 9s ease;
+  
+} */
